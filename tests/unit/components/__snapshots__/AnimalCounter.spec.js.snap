@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AnimalCounter snapshot test should render correctly 1`] = `
+<div
+  class="flex justify-center items-center"
+>
+  <button
+    class="base secondary"
+  >
+    Remove
+  </button>
+   
+  <span
+    class="w-52 text-center"
+  >
+    Current cow count: 123
+  </span>
+   
+  <button
+    class="base secondary"
+  >
+    Add
+  </button>
+</div>
+`;
