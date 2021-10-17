@@ -1,0 +1,137 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home snapshot should render view correctly 1`] = `
+<div>
+  <div
+    class="text-center mb-4"
+  >
+    <span
+      class="text-3xl"
+    >
+      Farm Manager
+    </span>
+  </div>
+   
+  <div
+    class="flex justify-center items-end"
+  >
+    <div
+      class="max-w-xs mx-2"
+    >
+      <label
+        class="textfield__label"
+      >
+        
+    Farm
+  
+      </label>
+       
+      <input
+        class="textfield__input"
+        placeholder="(e.g.: Meierhof)"
+        type="text"
+      />
+    </div>
+     
+    <div>
+      <button
+        class="base flex items-center primary"
+      >
+        Load 
+        <!---->
+      </button>
+    </div>
+  </div>
+   
+  <div
+    class="m-4"
+  >
+    <div
+      class="flex justify-center items-center"
+    >
+      <button
+        class="base flex items-center m-1 secondary"
+      >
+        
+    Remove
+   
+        <!---->
+      </button>
+       
+      <span
+        class="w-52 text-center"
+      >
+        Current cow count: 1
+      </span>
+       
+      <button
+        class="base flex items-center secondary"
+      >
+        Add 
+        <!---->
+      </button>
+    </div>
+    <div
+      class="flex justify-center items-center"
+    >
+      <button
+        class="base flex items-center m-1 secondary"
+      >
+        
+    Remove
+   
+        <!---->
+      </button>
+       
+      <span
+        class="w-52 text-center"
+      >
+        Current pig count: 2
+      </span>
+       
+      <button
+        class="base flex items-center secondary"
+      >
+        Add 
+        <!---->
+      </button>
+    </div>
+    <div
+      class="flex justify-center items-center"
+    >
+      <button
+        class="base flex items-center m-1 secondary"
+      >
+        
+    Remove
+   
+        <!---->
+      </button>
+       
+      <span
+        class="w-52 text-center"
+      >
+        Current sheep count: 3
+      </span>
+       
+      <button
+        class="base flex items-center secondary"
+      >
+        Add 
+        <!---->
+      </button>
+    </div>
+  </div>
+   
+  <div
+    class="flex justify-center"
+  >
+    <button
+      class="base flex items-center primary"
+    >
+      Submit 
+      <!---->
+    </button>
+  </div>
+</div>
+`;

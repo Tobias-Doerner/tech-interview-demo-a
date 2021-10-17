@@ -3,13 +3,16 @@
     <div class="text-center mb-4">
       <span class="text-3xl">Farm Manager</span>
     </div>
-    <div class="flex justify-center">
+    <div class="flex justify-center items-end">
       <v-text-field
         class="max-w-xs mx-2"
         label="Farm"
         placeholder="(e.g.: Meierhof)"
         v-model="farm.name"
       />
+      <div>
+        <v-btn :loading="isLoading" @click="load">Load</v-btn>
+      </div>
     </div>
     <div class="m-4">
       <animal-counter
@@ -58,6 +61,7 @@ export default {
         ],
         name: ''
       },
+      isLoading: false,
       isSaving: false
     }
   },
@@ -68,6 +72,21 @@ export default {
     }
   },
   methods: {
+    load() {
+      if (!this.farm.name || this.farm.name.length === 0) return
+      this.isLoading = true
+      axios
+        .get(this.queryUrl)
+        .then((res) => {
+          if (res.status === 200 && res.data != null) {
+            this.farm = res.data
+          }
+        })
+        .catch(() => {})
+        .finally(() => {
+          this.isLoading = false
+        })
+    },
     save() {
       if (!this.farm.name || this.farm.name.trim().length === 0) return
       this.isSaving = true
