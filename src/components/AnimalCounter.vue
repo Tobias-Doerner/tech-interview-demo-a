@@ -1,6 +1,8 @@
 <template>
   <div class="flex justify-center items-center">
-    <v-btn :disabled="value < 1" secondary @click="decrease">Remove</v-btn>
+    <v-btn class="m-1" :disabled="value < 1" secondary @click="decrease">
+      Remove
+    </v-btn>
     <span class="w-52 text-center">{{ label }}</span>
     <v-btn secondary @click="increase">Add</v-btn>
   </div>

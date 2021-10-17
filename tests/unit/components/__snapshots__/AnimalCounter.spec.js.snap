@@ -5,9 +5,12 @@ exports[`AnimalCounter snapshot test should render correctly 1`] = `
   class="flex justify-center items-center"
 >
   <button
-    class="base secondary"
+    class="base flex items-center m-1 secondary"
   >
+    
     Remove
+   
+    <!---->
   </button>
    
   <span
@@ -17,9 +20,10 @@ exports[`AnimalCounter snapshot test should render correctly 1`] = `
   </span>
    
   <button
-    class="base secondary"
+    class="base flex items-center secondary"
   >
-    Add
+    Add 
+    <!---->
   </button>
 </div>
 `;

@@ -2,10 +2,11 @@
   <button
     :disabled="disabled"
     :class="classObject"
-    class="base"
+    class="base flex items-center"
     @click="$emit('click', $event)"
   >
     <slot></slot>
+    <div class="spinner" v-if="loading" />
   </button>
 </template>
 
@@ -13,6 +14,10 @@
 export default {
   props: {
     disabled: {
+      type: Boolean,
+      default: false
+    },
+    loading: {
       type: Boolean,
       default: false
     },
@@ -37,7 +42,7 @@ export default {
 
 <style scoped>
 .base {
-  @apply font-bold m-1 px-2 py-1 rounded-sm text-white disabled:opacity-50;
+  @apply font-bold px-2 py-1 rounded-sm text-white disabled:opacity-50;
 }
 
 .primary {
@@ -46,5 +51,9 @@ export default {
 
 .secondary {
   @apply bg-gray-500 active:bg-gray-800 hover:bg-gray-700;
+}
+
+.spinner {
+  @apply mx-1 animate-spin rounded-full h-5 w-5 border-b-4 border-white;
 }
 </style>
