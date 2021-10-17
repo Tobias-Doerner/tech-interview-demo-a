@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VBtn snapshot tests should render button with loading spinner correctly 1`] = `
+<button
+  class="base flex items-center primary"
+>
+  Submit 
+  <div
+    class="spinner"
+  />
+</button>
+`;
+
+exports[`VBtn snapshot tests should render button without loading spinner correctly 1`] = `
+<button
+  class="base flex items-center primary"
+>
+  Submit 
+  <!---->
+</button>
+`;
